@@ -1,7 +1,7 @@
 module Main (main) where
 
-import Problem1
+import Problem2
 
 main :: IO ()
 main = do 
-    print problem1Simple
+    print problem2
