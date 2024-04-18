@@ -1,4 +1,4 @@
-module Problem1 (problem1, problem1Simple) where
+module Problem.Problem1 (problem1, problem1Simple) where
 
 problem1 :: Int
 problem1 = foldl (\acc n -> if divisibleBy3or5 n then acc + n else acc) 0 [1..1000-1]

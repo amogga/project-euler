@@ -1,7 +1,15 @@
 module Main (main) where
 
-import Problem2
+import System.Random
+import Control.Monad
+import Algorithm.Prime.PrimalityTest
+import Problem.Problem3
 
 main :: IO ()
 main = do 
-    print problem2
+    -- let num = 13195
+    let num = 600851475143
+    let snum = (floor . sqrt) (fromIntegral num) + 1
+
+    pt <- filterM (`isPrime` 3) [1..123]
+    print $ sum pt
