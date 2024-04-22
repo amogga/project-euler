@@ -26,9 +26,10 @@ source-repository head
 library
   exposed-modules:
       Algorithm.Prime.PrimalityTest
-      Problem.Problem1
-      Problem.Problem2
-      Problem.Problem3
+      Problem.Problem1.P1
+      Problem.Problem2.P2
+      Problem.Problem3.P3
+      Problem.Problem4.P4
   other-modules:
       Paths_project_euler
   autogen-modules:
