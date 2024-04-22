@@ -1,4 +1,4 @@
-module Problem.Problem2 (problem2) where
+module Problem.Problem2.P2 (problem2) where
 
 problem2 :: Int
 problem2 = sum $ takeWhile (< 4000000) (filter even fibonacciSeries)
