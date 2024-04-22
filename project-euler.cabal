@@ -30,6 +30,7 @@ library
       Problem.Problem2.P2
       Problem.Problem3.P3
       Problem.Problem4.P4
+      Problem.Problem5.P5
   other-modules:
       Paths_project_euler
   autogen-modules:
