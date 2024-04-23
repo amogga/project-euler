@@ -1,8 +1,7 @@
 module Main (main) where
 
-import Problem.Problem7.P7
+import Problem.Problem8.P8
 
 main :: IO ()
 main = do
-    res <- problem7Naive
-    print res
+    print problem8
