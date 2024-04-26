@@ -26,7 +26,9 @@ source-repository head
 library
   exposed-modules:
       Algorithm.Prime.PrimalityTest
+      Algorithm.Prime.PrimesGeneration
       Problem.Problem1.P1
+      Problem.Problem10.P10
       Problem.Problem2.P2
       Problem.Problem3.P3
       Problem.Problem4.P4
