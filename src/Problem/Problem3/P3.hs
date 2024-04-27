@@ -3,7 +3,7 @@ module Problem.Problem3.P3 (problem3) where
 import Algorithm.Prime.PrimalityTest
 
 problem3 :: IO Integer
-problem3 = do 
+problem3 = do
     let num = 600851475143
     problem3InnerRecursion num 3 1
 

@@ -1,4 +1,4 @@
-module Problem.Problem9.P9 where 
+module Problem.Problem9.P9 (problem9) where
 
 problem9 :: Integer
 problem9 = findABCProduct $ head $ filter isABCAdditionSatisfied [(m, n) | m <- [1..], n <- [1..m-1], m > n]
@@ -8,7 +8,7 @@ findABCProduct = multiplyABC . mnTupleToABCTuple
     where
     multiplyABC (a,b,c) = a * b * c
 
-isABCAdditionSatisfied :: (Integer,Integer) -> Bool 
+isABCAdditionSatisfied :: (Integer,Integer) -> Bool
 isABCAdditionSatisfied mnTuple = (addABC . mnTupleToABCTuple) mnTuple == 1000
     where
     addABC (a,b,c) = a + b + c
@@ -16,6 +16,6 @@ isABCAdditionSatisfied mnTuple = (addABC . mnTupleToABCTuple) mnTuple == 1000
 mnTupleToABCTuple :: (Integer, Integer) -> (Integer, Integer, Integer)
 mnTupleToABCTuple (m,n) = (a,b,c)
     where
-    a = m * m - n * n 
+    a = m * m - n * n
     b = 2 * m * n
     c = m * m + n * n
