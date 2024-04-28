@@ -1,6 +1,5 @@
 module Main (main) where
 
-import Problem.Problem11.P11 (problem11)
 import Problem.Problem20.P20 (problem20)
 -- import Criterion.Main
 
