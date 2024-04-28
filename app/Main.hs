@@ -1,11 +1,11 @@
 module Main (main) where
 
-import Problem.Problem20.P20 (problem20)
+import Problem.Problem13.P13 (problem13)
 -- import Criterion.Main
 
 main :: IO ()
 main = do
-    print problem20
+    print problem13
 
 -- main :: IO ()
 -- main = defaultMain
