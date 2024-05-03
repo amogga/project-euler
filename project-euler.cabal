@@ -25,6 +25,7 @@ source-repository head
 
 library
   exposed-modules:
+      Algorithm.Numerics.Integer
       Algorithm.Prime.PrimalityTest
       Algorithm.Prime.PrimesGeneration
       Problem.Problem1.P1
@@ -36,6 +37,7 @@ library
       Problem.Problem21.P21
       Problem.Problem24.P24
       Problem.Problem3.P3
+      Problem.Problem35.P35
       Problem.Problem4.P4
       Problem.Problem5.P5
       Problem.Problem6.P6
@@ -50,7 +52,8 @@ library
       src
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
   build-depends:
-      base >=4.7 && <5
+      arithmoi
+    , base >=4.7 && <5
     , criterion
     , random
   default-language: Haskell2010
@@ -65,7 +68,8 @@ executable project-euler-exe
       app
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      base >=4.7 && <5
+      arithmoi
+    , base >=4.7 && <5
     , criterion
     , project-euler
     , random
@@ -82,7 +86,8 @@ test-suite project-euler-test
       test
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
-      base >=4.7 && <5
+      arithmoi
+    , base >=4.7 && <5
     , criterion
     , project-euler
     , random

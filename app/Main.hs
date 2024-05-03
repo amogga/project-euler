@@ -1,16 +1,16 @@
 module Main (main) where
 
-import Problem.Problem21.P21
--- import Criterion.Main
+import Problem.Problem35.P35
+import Criterion.Main
+import Algorithm.Prime.PrimesGeneration (primes)
 
 main :: IO ()
 main = do
-    print $ problem21
+  print $ problem35Slow 1000000
+
 
 -- main :: IO ()
 -- main = defaultMain
---     [ bgroup "Problem 10"
---         [ bench "1" $ whnf sum $ primes 10,
---           bench "5"  $ whnf sum $ primes 2000000
---         ]3545
+--     [ bgroup "Problem 35"
+--         [ bench "1" $ whnf problem35Slow 1000000 ]
 --     ]
