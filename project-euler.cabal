@@ -1,6 +1,6 @@
 cabal-version: 2.2
 
--- This file has been generated from package.yaml by hpack version 0.36.0.
+-- This file has been generated from package.yaml by hpack version 0.37.0.
 --
 -- see: https://github.com/sol/hpack
 
@@ -40,6 +40,7 @@ library
       Problem.Problem35.P35
       Problem.Problem38.P38
       Problem.Problem4.P4
+      Problem.Problem48.P48
       Problem.Problem5.P5
       Problem.Problem6.P6
       Problem.Problem7.P7
